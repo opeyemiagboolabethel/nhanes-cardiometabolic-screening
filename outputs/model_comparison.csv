@@ -1,0 +1,5 @@
+model,development_group_cv_auc
+Logistic baseline,0.7370281354011275
+Spline logistic,0.7258695883204288
+Random forest,0.712250505086323
+Gradient boosting,0.6714479956582305

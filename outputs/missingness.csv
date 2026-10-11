@@ -1,0 +1,9 @@
+release,feature,missing_n,missing_pct
+development,RIDAGEYR,0,0.0
+development,RIAGENDR,0,0.0
+development,BMXBMI,36,0.8383791336748951
+development,BMXWAIST,214,4.983698183511877
+temporal_test,RIDAGEYR,0,0.0
+temporal_test,RIAGENDR,0,0.0
+temporal_test,BMXBMI,94,1.4148103552077063
+temporal_test,BMXWAIST,275,4.13907284768212

@@ -1,0 +1,58 @@
+[
+  {
+    "role": "development",
+    "file": "DEMO_I.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DEMO_I.xpt",
+    "bytes": 3756480,
+    "sha256": "c9297c6c37ae8f78f29be9568fa2a03cf3b112616a39afee04030fc775a66a0d"
+  },
+  {
+    "role": "development",
+    "file": "BMX_I.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BMX_I.xpt",
+    "bytes": 1989600,
+    "sha256": "d31da84e14212b4e58e8340598a5b8e2144fac83333563e966eb1b332e4141d6"
+  },
+  {
+    "role": "development",
+    "file": "GHB_I.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/GHB_I.xpt",
+    "bytes": 108960,
+    "sha256": "e4bc626cd12f6057c7806aef4f85874c9bf1407a7480d6621a4af142260addd2"
+  },
+  {
+    "role": "development",
+    "file": "DIQ_I.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DIQ_I.xpt",
+    "bytes": 4144720,
+    "sha256": "e87587479b29f175b63eee5dd40d582837e3e3fe2665503012085eefdb978e0d"
+  },
+  {
+    "role": "temporal_test",
+    "file": "P_DEMO.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_DEMO.xpt",
+    "bytes": 3614720,
+    "sha256": "2e46c6c26bf77cd8989f64011ace12cbf42c0f3e03414eb59acc5328c8f87913"
+  },
+  {
+    "role": "temporal_test",
+    "file": "P_BMX.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_BMX.xpt",
+    "bytes": 2520640,
+    "sha256": "7038d0da3169420a4a3cbaec09ac586a701b38e1c7b925431b60e13ac24fed66"
+  },
+  {
+    "role": "temporal_test",
+    "file": "P_GHB.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_GHB.xpt",
+    "bytes": 167600,
+    "sha256": "dac9e423f56041c2ec46486cb16be16d3347e0a81a575985882ffad5a60e1195"
+  },
+  {
+    "role": "temporal_test",
+    "file": "P_DIQ.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_DIQ.xpt",
+    "bytes": 3361520,
+    "sha256": "79153f799fc2171792771c4aa250029c62807f14915f1f81405b03233b1e5ae3"
+  }
+]

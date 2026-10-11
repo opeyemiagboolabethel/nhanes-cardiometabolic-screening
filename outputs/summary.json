@@ -1,0 +1,217 @@
+{
+  "title": "Cardiometabolic Screening Intelligence",
+  "task": "Elevated HbA1c (\u22655.7%) at the survey examination; not incident disease prediction",
+  "development_n": 4294,
+  "fit_n": 3097,
+  "calibration_n": 1197,
+  "temporal_test_n": 6644,
+  "selected_model": "Logistic baseline",
+  "cv_results": [
+    {
+      "model": "Logistic baseline",
+      "development_group_cv_auc": 0.7370281354011275,
+      "fold_aucs": [
+        0.75559462626573,
+        0.7133652131169771,
+        0.738568896668532,
+        0.7405838055532709
+      ]
+    },
+    {
+      "model": "Spline logistic",
+      "development_group_cv_auc": 0.7258695883204288,
+      "fold_aucs": [
+        0.735409445167782,
+        0.709725959052759,
+        0.7244787495070439,
+        0.7338641995541303
+      ]
+    },
+    {
+      "model": "Random forest",
+      "development_group_cv_auc": 0.712250505086323,
+      "fold_aucs": [
+        0.7425492313244062,
+        0.6943409587130894,
+        0.7096881146270464,
+        0.7024237156807502
+      ]
+    },
+    {
+      "model": "Gradient boosting",
+      "development_group_cv_auc": 0.6714479956582305,
+      "fold_aucs": [
+        0.6987895911301361,
+        0.6638174288967529,
+        0.6627648751684135,
+        0.6604200874376197
+      ]
+    }
+  ],
+  "threshold": 0.22334821427602153,
+  "calibration_metrics": {
+    "roc_auc": 0.7484759287965561,
+    "average_precision": 0.5060757591713403,
+    "brier": 0.1715050433781419,
+    "log_loss": 0.5146154483898051,
+    "prevalence": 0.27835840589635735,
+    "sensitivity": 0.8010066292310051,
+    "specificity": 0.5523015199036807,
+    "screen_positive_fraction": 0.546044773279643,
+    "positive_predictive_value": 0.4083308536880185
+  },
+  "temporal_metrics": {
+    "roc_auc": 0.7437721420739128,
+    "average_precision": 0.4751644692381217,
+    "brier": 0.17111573281961376,
+    "log_loss": 0.5116338410433076,
+    "prevalence": 0.27075073652695325,
+    "sensitivity": 0.808873058959067,
+    "specificity": 0.5529161307088107,
+    "screen_positive_fraction": 0.5450385588612568,
+    "positive_predictive_value": 0.40181189552448854
+  },
+  "conditional_test_ci": {
+    "roc_auc": {
+      "low": 0.7213978463075865,
+      "high": 0.7629286441121597
+    },
+    "average_precision": {
+      "low": 0.44036046029516746,
+      "high": 0.5132509787313697
+    },
+    "brier": {
+      "low": 0.16289378244019415,
+      "high": 0.1800769162278948
+    },
+    "log_loss": {
+      "low": 0.49188793570096545,
+      "high": 0.5338518743951219
+    },
+    "prevalence": {
+      "low": 0.2542708539223363,
+      "high": 0.28787192350639923
+    },
+    "sensitivity": {
+      "low": 0.7818125312992031,
+      "high": 0.8324296676032238
+    },
+    "specificity": {
+      "low": 0.5150647610309033,
+      "high": 0.5847765978372536
+    },
+    "screen_positive_fraction": {
+      "low": 0.5164013371371522,
+      "high": 0.5739431379393092
+    },
+    "positive_predictive_value": {
+      "low": 0.3778762051816082,
+      "high": 0.4240816603809061
+    }
+  },
+  "constant_baseline": {
+    "roc_auc": 0.5,
+    "average_precision": 0.27075073652695253,
+    "brier": 0.19747078513850813,
+    "log_loss": 0.5840705062085665,
+    "prevalence": 0.27075073652695325,
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "screen_positive_fraction": 1.0,
+    "positive_predictive_value": 0.27075073652695325
+  },
+  "uncalibrated_test": {
+    "roc_auc": 0.7437721420739128,
+    "average_precision": 0.4751644692381217,
+    "brier": 0.17108503887438847,
+    "log_loss": 0.5114075798744525,
+    "prevalence": 0.27075073652695325,
+    "sensitivity": 0.7978058896250052,
+    "specificity": 0.5645515556955375,
+    "screen_positive_fraction": 0.5335569895110246,
+    "positive_predictive_value": 0.4048424750643213
+  },
+  "flow": {
+    "development": [
+      {
+        "stage": "All respondents",
+        "n": 9971
+      },
+      {
+        "stage": "Age 20+",
+        "n": 5719
+      },
+      {
+        "stage": "Positive MEC examination weight",
+        "n": 5719
+      },
+      {
+        "stage": "No reported diabetes; valid questionnaire",
+        "n": 4872
+      },
+      {
+        "stage": "No reported insulin or diabetes tablets",
+        "n": 4806
+      },
+      {
+        "stage": "Not recorded pregnant",
+        "n": 4739
+      },
+      {
+        "stage": "HbA1c observed",
+        "n": 4294
+      }
+    ],
+    "temporal_test": [
+      {
+        "stage": "All respondents",
+        "n": 15560
+      },
+      {
+        "stage": "Age 20+",
+        "n": 9232
+      },
+      {
+        "stage": "Positive MEC examination weight",
+        "n": 9232
+      },
+      {
+        "stage": "No reported diabetes; valid questionnaire",
+        "n": 7807
+      },
+      {
+        "stage": "No reported insulin or diabetes tablets",
+        "n": 7699
+      },
+      {
+        "stage": "Not recorded pregnant",
+        "n": 7617
+      },
+      {
+        "stage": "HbA1c observed",
+        "n": 6644
+      }
+    ]
+  },
+  "features": [
+    "RIDAGEYR",
+    "RIAGENDR",
+    "BMXBMI",
+    "BMXWAIST"
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3"
+  },
+  "limitations": [
+    "Cross-sectional screening, not future disease prediction or diagnosis",
+    "United States adults; no Nigerian validation",
+    "Age top-coded at 80; exclude recorded pregnancy but unknown pregnancy status remains",
+    "MEC weights used without lab item-nonresponse reweighting; estimates apply to observed analytic cohort",
+    "Model conditional bootstrap excludes training uncertainty; subgroup estimates lack design-based confidence intervals",
+    "Development calibration set also chooses threshold; its performance is not unbiased validation",
+    "Decision curves are exploratory; no tested clinical utility",
+    "BMI and waist missingness imputed within each training fold; sex and age not imputed at application input"
+  ]
+}
